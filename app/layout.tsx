@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Figtree } from 'next/font/google'
+import { Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
 import Sidebar from '@/components/Siderbar'
 
-const font = Figtree({ subsets: ['latin'] })
+const font = Noto_Sans_JP({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Spotify Clone',
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className={font.className}>
       <Sidebar>
         {children}
