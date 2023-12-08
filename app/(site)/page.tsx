@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import ListItem from "@/components/ListItem";
 
 export default function Home() {
   return (
@@ -10,8 +11,40 @@ export default function Home() {
     overflow-hidden
     overflow-y-auto">
       <Header>
-        Header
+        <div className="mb-2">
+          <h1 className="
+          text-white
+          text-3xl
+          font-semibold">
+            おかえりなさい
+          </h1>
+          <div className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          xl:grid-cols-3
+          2xl:grid-cols-4
+          gap-3
+          mt-4
+          ">
+            <ListItem 
+              image="/images/liked.png"
+              name="お気に入りの曲"
+              href="liked"
+            />
+          </div>
+        </div>
       </Header>
+      <div className="mt-2 mb-7 px-6">
+        <div className="flex justify-between items-center">
+          <h1 className="text-white text-2xl font-semibold">
+            最新の曲
+          </h1>
+        </div>
+        <div>
+          最新の曲リスト
+        </div>
+      </div>
     </div>
   )
 }
